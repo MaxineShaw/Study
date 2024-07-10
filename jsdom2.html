@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 2 - Vanilla JS DOM</title>
+    </head> 
+    <body>
+        <p>Input radius value and get the volume of a shpere.</p>
+		<label for="radius">Input Radius</label>
+		<input type="number" id="radius">
+		<label for="volume">Volume</label>
+		<input type="number" id="volume" placeholder="" disabled>
+		<button id="calculate" onclick="calculate()">Calculate</button>
+		<script>
+		function calculate() {
+		document.getElementById('volume').placeholder = (4 / 3) * Math.PI * Math.pow(document.getElementById('radius').value, 3);
+		}
+		</script>
+    </body>
+</html>
